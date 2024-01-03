@@ -40,7 +40,7 @@ class Mesh:
         # material id
         self.id = np.zeros(self.number_els).astype(int)
 
-    def plot(self, colorvalues=None, meshcolor='k', ax=None, box=False,
+    def plot(self, colorvalues=None, meshcolor='k', ax=None, box=True,
              triplot_kw=None, zoombox_kw=None, **tripcolor_kw):
 
         if ax is None:
