@@ -85,7 +85,7 @@ class Mesh:
 
     def zoom_plot(self,
                    zoom_xys=((None, None), (None, None)),
-                   box_xys=((0.35, 0.8), (0.35, 0.8)),
+                   box_xys=((0.3, 0.8), (0.3, 0.8)),
                    c='k',
                    lw=0.5,
                    ls='-.',

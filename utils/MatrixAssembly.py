@@ -480,7 +480,7 @@ def set_stress_field(mesh, stress_field, applied_nodes=None):
     il = np.isin(mesh.connectivity, applied_nodes)
     elt_line = np.argwhere(il.sum(axis=1) == mesh.connectivity.shape[1])[:, 0]
 
-    for i, e in enumerate(elt_line):
+    for e in elt_line:
 
         n_e = mesh.connectivity[e]
         n_dof = np.vstack([2 * n_e, 2 * n_e + 1]).reshape(-1, order='F')
